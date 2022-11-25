@@ -25,7 +25,7 @@ const plusFunction = id => {
     cart[id].number++;
     renderCart();
 }
-// уменьшение количества товарок
+// уменьшение количества товаров
 const minusFunction = id => {
     if (cart[id].number <= 0) {
         renderCart(id);
@@ -35,7 +35,7 @@ const minusFunction = id => {
     renderCart();
 }
 
-// удаление товаров из коризины
+// удаление товаров из корзины
 const deleteFunction = id => {
     delete cart[id];
     renderCart();
